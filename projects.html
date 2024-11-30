@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+    background-color: #333333;
+
+    /* border: 0.3rem solid white; */
+}
+.container{
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            width: 100vw;
+            
+        }
+        h2{
+            font-variant: small-caps;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.4rem 0rem;
+            font-size: 2rem;
+            border: 5px ridge black;
+        }
+        .hidden {
+            display: none; /* Class to hide elements */
+        }
+        .projects{
+            background-color: #333333;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0rem 2rem;
+        }
+        
+#footer{
+    text-align: center;
+    
+    margin: 2rem 0px;
+    color: white;
+}
+        .projects p{
+            font-variant: small-caps;
+            word-spacing: 5px;
+            padding: 0.3rem 0.5rem;
+            color: pink;
+            font-size: 1.7rem;
+        }
+        .projects div{
+            height: 300px;
+            width: 100%;
+            border: 5px ridge yellow;
+            border-collapse: collapse;
+
+        }
+        .common{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        position: relative;
+        }
+        button{
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 20px;
+            margin: 1rem 0rem;
+            cursor: pointer;
+        }
+        #btn{
+            font-size: 1.5rem;
+
+        }
+        #btn-para{
+            color: gray;
+        }
+        .comeicon , .clickicon{
+width: 100px!important;
+height: 100px !important;
+        }
+        .comeicon{
+            position: absolute;
+            top: 22px;
+            left: 23px;
+            background-image: url(clickicon.jpg);
+            background-size: contain;
+background-repeat: no-repeat;
+border-radius: 50%;
+        }
+        .clickicon{
+            position: absolute;
+            top: 22px;
+            right: 23px;
+            background-image:url(clickicon.jpg);
+            background-size: cover;
+            border-radius: 50%;
+        }
+        @media screen and (max-width:500px) {
+            h2{
+                font-size: 14px;
+            }
+            #btn-para{
+                
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+            .projects p{
+          
+            font-size: 1.4rem;
+        }
+        .clickicon , .comeicon{
+            width: 50px !important;
+            height: 50px !important;
+        }
+        button{
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
+
+        }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container"></div>
+    <div class="nav2 hide"></div>
+    <!-- Projects class is the container for all projects -->
+  <div class="project-container">
+    <h2>Some basic projects of raushan </h2>
+    <div class="projects">
+       
+    <div class="common calculator"><p>Calculator</p>
+        <div style="border: none;" class="comeicon"></div>
+        <div style="border: none;" class="clickicon"></div>
+        <p id="btn-para"><a href="https://raushan-kumar286.github.io/Calculator720/"><button id="btn">Click here</button></a> To use calculator</p>
+
+    </div>
+    <div class="common amazon"><p>Amazone Clone</p>
+        <div style="border: none;" class="comeicon"></div>
+        <div style="border: none;" class="clickicon"></div>
+
+        <p id="btn-para"><a href="https://raushan-kumar286.github.io/Amazone1720/"><button id="btn">Click here</button></a> To visit clone</p>
+
+    </div>
+    <div class="common to-do-list"><p>To-Do-List app</p>
+        <div style="border: none;" class="comeicon"></div>
+        <div style="border: none;" class="clickicon"></div>
+
+        <p id="btn-para"><a href="https://raushan-kumar286.github.io/ToDoList1720/"><button id="btn">Click here</button></a> To check app</p>
+
+    </div>
+    <div class="common paper-scissor"><p>Rock Paper Scissor game</p>
+        <div style="border: none;" class="comeicon"></div>
+        <div style="border: none;" class="clickicon"></div>
+
+        <p id="btn-para"><a href="https://raushan-kumar286.github.io/Paperscissor1720/"><button id="btn">Click here</button></a> To play game</p>
+
+    </div>
+    <div class="common tic-tac-toe"><p>Tic-Tac-Toe Game</p>
+        <div style="border: none;" class="comeicon"></div>
+        <div style="border: none;" class="clickicon"></div>
+
+        <p id="btn-para"><a href="https://raushan-kumar286.github.io/Tictac1720/"><button id="btn">Click here</button></a> To play game</p>
+    </div>
+
+   </div>
+   <footer id="footer" id="go-contact">
+    &copy 2024 Raushan Kumar Singh . All Rights Reserved
+  </footer>
+</div>
+   </body>
+    <script>
+         let nav2 = document.querySelector(".nav2");
+        let projects = document.querySelector(".project-container");
+
+        // Function to toggle visibility of the projects based on screen size and nav2 visibility
+        function toggleVisibility() {
+            if (window.innerWidth < 1060 && nav2.classList.contains("show")) {
+                projects.classList.add("hidden");
+            } else {
+                projects.classList.remove("hidden");
+            }
+        }
+
+        // Example: Triggering the toggle (you should have your own logic to add/remove the "show" class)
+        setInterval(() => {
+            toggleVisibility(); // Check visibility every second
+        }, 0);
+    </script>
+    <script src="navComponentfile.js"></script>
+</body>
+</html>

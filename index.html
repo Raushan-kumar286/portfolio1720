@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <style>
+    .hidden{
+      display: none;
+    }
+   
+  </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<div class="container"></div>
+<div class="nav2 hide" style="position: sticky; top: 83px;"></div>
+ 
+<div class="first-container">
+  <div class="line">
+  </div>
+<div class="welcome-container">
+    <div class="name-text">
+        <span>To </span>
+        <span>Raushan's </span>
+        <span>Portfolio</span>
+    </div>
+</div>
+</div>
+      
+<div class="contentOfraushan">
+<main>
+   <div class="text">
+            
+          <p id="small-name">Raushan kumar</p>
+            <h4>Hey! I'M Raushan</h4>
+            <h4 id="developer">I'M A <span id="elements"></span></h4>
+        <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda obcaecati itaque officiis eius laboriosam fugit sapiente quis illum, beatae id corrupti dicta dolores eos ab. Quo voluptatum excepturi velit neque.
+        Est numquam odio dolores, exercitationem accusantium iure ipsam eum tenetur totam voluptatem magni reprehenderit dicta pariatur tempore, esse molestiae inventore. Consequuntur ullam architecto ea eveniet hic. Aliquam accusantium adipisci tenetur.</p>
+        
+<div class="resume-btns">
+    <a href="Raushan_RESUME.pdf" download> <button class="touch-btn" style="margin-top: 10px;">Download Resume</button></a>
+    <a href="Raushan_RESUME.pdf" > <button class="touch-btn" style="margin-top: 10px;">View Resume</button></a>
+   
+    
+    </div>
+        <div class="touch" >
+            <button class="touch-btn">Get in Touch &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long" style="color: white;"></i></button>
+       <div class="contact-icon">
+        <i class="icons-of-contact fa-brands fa-facebook " style="color: #B197FC;"></i>
+        <i class="icons-of-contact fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+        <i class="icons-of-contact fa-brands fa-linkedin " style="color: #B197FC;"></i>
+        <i class="icons-of-contact fa-brands fa-square-instagram" style="color: #d01616;"></i>
+    </div> 
+</div>
+</div>
+        <div class="image"></div>
+    </main>
+
+    <section class="skill-section">
+        <hr>
+        <div id="skill">
+          <h2><img src="cse.jpg" alt="" width="30px">Skills</h2>
+          <hr>
+          <ul class="skills-list">
+            <li>Proficient in Html, Css and Javascript</li>
+            <li  id="lang">Knowledge of Python ,C,C++,Java (learning)</li>
+            <li>Responsive Web Design</li>
+            <li>Database Managnement (My SQL)</li>
+          </ul>
+        </ul>
+      </section>
+      
+      <hr id="line">
+      
+      <!-- section 4 -->
+      <section class="skill-section">
+        <div id="skill">
+            <h2><img src="cse.jpg" alt="" width="30px">Hobbies</h2>
+          <hr>
+          
+          <p > When I’m not working on coding raushanIndex, I enjoy spending my time pursuing various hobbies such as:</p>
+          
+          <ul class="hobbies-list">
+            <li>Reading technology blogs and exploring new trends in the tech world.</li>
+            <li>Playing chess to enhance strategic thinking and problem-solving skills.</li>
+            <li>Hiking and nature photography to stay active and creative.</li>
+            
+          </ul>
+        </div>
+        <hr>
+        <div class="contact-link">
+          <h2 style="display: flex;justify-content: center; padding: 0.5rem 0rem;
+          align-items: center;"><img src="contact-icon.png" alt="" width="30px">Contact me</h2>
+          <hr>
+          <div class="icon-container"> 
+            <a href="#facebook"><i class="contacting fa-brands fa-facebook " style="color: #B197FC;"></i> Contact me on Facebook</a></div>
+          <div class="icon-container" style="font-weight: bold;" ><i class="contacting fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i> Contact me on whatsapp :- 9199320273</div>
+          <div class="icon-container" ><a href="linkedin" ><i class="contacting fa-brands fa-linkedin " style="color: #B197FC;"></i>   Follow me on Linkedin    </a></div>
+          <div class="icon-container" ><a href=" insta"   ><i class="contacting fa-brands fa-square-instagram" style="color: #d01616;"></i> Visit my Instagram</a></div>
+          
+        </div>
+        <hr>
+      </div>
+        <footer id="footer" id="go-contact">
+          &copy 2024 Raushan Kumar Singh . All Rights Reserved
+        </footer>
+      </section>
+      </div>
+      
+      <!-- footer -->
+   <script>
+    
+     let raushanIndex = document.querySelector(".contentOfraushan");
+    let welcome =  document.querySelector(".first-container");
+
+      window.addEventListener("load" ,()=>{
+          welcome.classList.add("welcome");
+         raushanIndex.style.display="none";
+         document.body.style.backgroundColor="white";
+         setTimeout(() => {
+           welcome.classList.remove("welcome");
+           setTimeout(() => {
+    document.body.style.backgroundColor="#000018";
+    raushanIndex.style.display="block";
+      
+  }, 800);
+          }, 2000);
+      })
+      console.log(raushanIndex);
+      let nav2 = document.querySelector(".nav2");
+
+        // Function to toggle visibility of the raushanIndex based on screen size and nav2 visibility
+        function toggleVisibility() {
+            if (window.innerWidth < 1060 && nav2.classList.contains("show")) {
+                raushanIndex.style.opacity="0";
+              } else {
+                raushanIndex.style.opacity="1";
+            }
+        }
+
+        // Example: Triggering the toggle (you should have your own logic to add/remove the "show" class)
+        setInterval(() => {
+          
+            toggleVisibility(); // Check visibility every second
+        }, 0);
+   </script>
+<script src="script.js"></script>
+<script src="navComponentfile.js"></script>
+</body>
+</html>

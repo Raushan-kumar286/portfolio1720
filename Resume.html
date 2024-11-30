@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+      body{
+        background-color: #272525;
+      }
+        .container{
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            width: 100vw;
+            
+        }
+        .left-image-part{
+            margin-top: -20px;
+        }
+        .branch-state h5{
+            font-size: 18px;
+            margin-left: -35px;
+            padding-top: 4px;
+            color: blue;
+        }
+        .myname{
+            font-size: 20px !important;
+        }
+        .branch-state p{
+            
+            margin-left: -35px;
+            padding-top: 4px;
+        font-weight: bold;
+        color: darkorchid;
+        }
+        .resume-container {
+    padding: 2rem 2rem; /* Adjust as needed */
+    background-color: white;
+    /* Optionally set a max-width for larger screens */
+}
+
+
+        .name-image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 1.7rem;
+        }
+
+        .name a {
+            color: blue!important;
+            font-size: 13px;
+        }
+
+        .Resume-image {
+            height: 120px;
+            width: 120px;
+            background-image: url(resumeimg.jpg);
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 20px;
+        }
+
+        .blue-box {
+            margin-top: 1rem;
+        }
+.hidden{
+    display: none;
+}
+        .blue-box-text {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+            color: white;
+            padding: 2px;
+            width: 140px;
+            margin: auto;
+            position: relative;
+            bottom: 11px;
+            text-align: center;
+            font-size: 12px;
+            
+        }
+
+
+        #table-content {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #table-content td, #table-content th {
+            border: 1.3px solid #272525;
+            padding: 8px;
+        }
+
+        .details {
+            width: 100%;
+        }
+
+        .details td, .details td li {
+            vertical-align: top;
+        }
+
+        .details td:first-child {
+            width: 30%;
+        }
+
+        .details td:last-child {
+            width: 70%;
+        }
+       
+ li{
+    list-style-type: none;
+    display: flex;
+}
+       
+       img{
+        width: 20px;
+        height: 20px;
+       }
+       .declaration-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+       }
+           li{
+            font-size: 11px !important;
+            }
+            th , td{
+            font-size: 12px;
+            }
+       .sign img{
+           width: 150px;
+           height: 30px;
+       }
+      #sign-image , #sign-text{
+                padding-top: 4px;
+                      }
+       .hereby{
+        align-self: flex-start;
+       }
+        @media screen and (min-width: 1060px) {
+            .resume-container {
+                width: 625px;
+                margin: 0rem auto;
+            }
+            .sign{
+                margin-right: 3rem;
+            }
+            #sign-text{
+                margin-left: -2rem ;
+            }
+            #sign-image{
+                margin-left: -4rem ;
+            }
+            }
+            
+        @media screen and (max-width:400px) {
+            .resume-container{
+                padding: 10px;
+            }
+        #table-content td, #table-content th {
+       font-size: 7.6px;
+       padding: 5px;
+        }
+        .details td  {
+        font-size: 10px;
+        }
+         .hereby{
+        font-size: 13px;
+        }
+            #sign-text{
+                margin-left: 2rem ;
+            }
+        li{
+            font-size: 9px;
+        }
+        /* //media query for upper part  */
+        .Resume-image{
+            width: 70px;
+            height: 70px;
+            
+        }
+        .name-image{
+            margin-left: 0px;
+        }
+        .myname{
+            font-size: 12px !important;
+        }
+    .name a{
+        font-size: 10px;
+    }
+        .left-image-part{
+            margin-top: 0px;
+
+        }
+        .branch-state h5{
+            font-size: 14px;
+            margin-left: 0px;
+        }
+        .branch-state p{
+            font-size: 14px;    
+            margin-left: 0px;
+            font-size: 12px;
+        }
+
+        }
+        @media screen and (min-width:400px) and (max-width:540px) {
+            .resume-container{
+                padding: 14px;
+            }
+        #table-content td, #table-content th {
+       font-size: 11px;
+       padding: 5px;
+        }
+        .details td{
+        font-size: 11px;
+        }
+        #sign-image{
+                margin-left: -2rem ;
+            }
+        li{
+            font-size: 11px;
+        }
+        .Resume-image{
+            width: 80px;
+            height: 80px;
+
+        }
+        .name-image{
+            margin-left: 0px;
+        }
+        .myname{
+            font-size: 12px !important;
+        }
+    .name a{
+        font-size: 10px;
+    }
+        .left-image-part{
+            margin-top: 0px;
+
+        }
+        .branch-state h5{
+            font-size: 14px;
+            margin-left: 0px;
+            padding-top: 4px;
+            color: blue;
+        }
+        .branch-state p{
+            font-size: 14px;    
+            margin-left: 0px;
+            padding-top: 4px;
+            font-size: 12px;
+
+            font-weight: bold;
+            color: darkorchid;
+        }
+        }
+        @media screen and (min-width:540px) and (max-width:1060px){
+             .declaration-content{
+             width: 522px;
+             }
+                     #sign-image{
+                margin-left: -2rem ;
+            }
+        
+        }
+        @media print {
+  .blue-box-text {
+    -webkit-print-background-color: blue;
+    -moz-print-background-color: blue;
+    background-color: blue !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .Resume-image{
+    -webkit-print-background-image: url(myimage.jpg);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  
+  }
+  #sign-text{
+    margin-left: 25px !important;
+  }
+  .container , .nav2{
+    display: none;
+  }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="container"></div>
+    <div class="nav2 hide"></div>
+    <div class="resume-container">
+        <div class="name-image">
+            <div class="left-image-part">
+
+                <div class="Resume-image"></div>
+                <div class="branch-state">
+                    <h5>Computer Science Engineer</h5>
+                    <p>Fresher</p>
+                </div>
+            </div>
+
+            <div class="name">
+                <ul>
+           
+            <li class="myname" style="  color: darkred; " >RAUSHAN KUMAR SINGH</li>
+                    <li>
+                        <a style="text-decoration: underline; margin-left: 3px;" href="mailto:raushansingh1720@gmail.com"> raushansingh1720@gmail.com</a>
+                    </li>
+                    <li style="margin-left: 7px;"> 9199320273</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text">
+                CAREER OBJECTIVE
+            </div>
+            <div class="Career-content">
+                <ul>
+                    <li><img src="list.jpg" alt="">MY SHORT TERM GOAL IS TO GET A JOB IN A REPUTED COMPANY.</li>
+                    <li><img src="list.jpg" alt="">MY LONG TERM GOAL IS TO ACHIEVE A HIGHER POSITION IN THE SAME COMPANY.</li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text" style="width: 100px;">
+                SKILLS
+            </div>
+            <div class="skill-content">
+                <ul>
+                    <li><img src="list.jpg" alt="">GOOD COMMUNICATION</li>
+                    <li><img src="list.jpg" alt="">GOOD KNOWLEDGE OF WEB DEVELOPMENT</li>
+                    <li><img src="list.jpg" alt="">BASICS OF MS OFFICE</li>
+                    <li><img src="list.jpg" alt="">PROGRAMMING LANGUAGES: C, C++ and JAVA</li>
+                </ul>   
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text" style="width: 100px;" >
+                Projects
+            </div>
+            <div class="training-content ">
+                <ul>
+                    <li><img src="list.jpg" alt="">Personal portfolio using Scratch</li>
+                    <li><img src="list.jpg" alt="">Amazon Clone</li>
+                    <li><img src="list.jpg" alt="">Basic Calculator</li>
+                    <li><img src="list.jpg" alt="">To-do-List App</li>
+                    <li style="width: 80v; display: block;"><img src="favicon.png" style="margin-left: 4px; width: 12px; padding-right: 5px; "  alt="">View Online : -<a href="https://portfolio1720.netlify.app/projects1720/#" style="color: blue; margin-left: 3px;" target="_blank">https://portfolio1720.netlify.app/projects1720/#</a></li>
+                </ul>     
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text" style="width: 170px;" >
+                TRAINING/INTERNSHIP
+            </div>
+            <div class="training-content">
+                <ul>
+                    <li><img src="list.jpg" alt="">FOUR WEEKS VOCATIONAL TRAINING FROM Cosmic Rays pvt LTD</li>
+                </ul>     
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text">
+                EDUCATION
+            </div>
+            <div class="education-content">
+                <table id="table-content">
+                    <tr>
+                        <th>DEGREE/COURSE</th>
+                        <th>Institute Name</th>
+                        <th>University</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>MATRICULATION</td>
+                        <td>HIGH SCHOOL JAINAGAR</td>
+                        <td>JAC</td>
+                        <td>92%</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>DIPLOMA</td>
+                        <td>GOVERNMENT POLYTECHNIC DHANBAD</td>
+                        <td>JUT</td>
+                        <td>76.04%</td>
+                        <td>2025</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="blue-box" >
+            <hr>
+            <div class="blue-box-text" style="width: 100px;">
+                STRENGTH
+            </div>
+            <div class="strength-content">
+                <ul>
+                    <li><img src="list.jpg" alt="">HARDWORKING</li>
+                    <li><img src="list.jpg" alt="">QUICK LEARNER</li>
+                    <li><img src="list.jpg" alt="">SELF MOTIVATED</li>
+                </ul>   
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text">
+                AREA OF INTEREST
+            </div>
+            <div class="details-content">
+                <ul>
+                    <li><img src="list.jpg" alt="">TO EXPLORE NEW THINGS</li>
+                    <li><img src="list.jpg" alt="">PLAYING CTICKET AND CARROM</li>
+                    <li><img src="list.jpg" alt="">READING BOOKS</li>
+                    <li><img src="list.jpg" alt="">COOKING</li>
+                </ul>   
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text">
+                PERSONAL DETAILS
+            </div>
+            <div>
+                <table class="details">
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Father's Name</li>
+                        </td>
+                        <td>RAM CHARITRA SINGH</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Address</li>
+                        </td>
+                        <td>Village-Kundidhanwar , Post-office:-Masmohana , P.S-Nawalshahi , District - Koderma , State - Jharkhand</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Date of Birth</li>
+                        </td>
+                        <td>15/02/2007</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Gender</li>
+                        </td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Marital Status</li>
+                        </td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Nationality</li>
+                        </td>
+                        <td>INDIAN</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><img src="list.jpg" alt="">Language</li>
+                        </td>
+                        <td>HINDI , ENGLISH</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="blue-box">
+            <hr>
+            <div class="blue-box-text">
+                DECLARATION
+            </div>
+            <div class="declaration-content">
+            <P class="hereby">I hereby declare that all details furnished above are true to the best of knowledge.</P>
+             <div class="sign">
+                <div id="sign-image">
+                    <img src="sign.jpg" alt="">
+                </div>
+                <div id="sign-text">SIGNATURE</div>
+             </div>   
+        </div>
+        </div>
+       
+    </div>
+   <script>
+        let nav2 = document.querySelector(".nav2");
+        let projects = document.querySelector(".resume-container");
+
+        // Function to toggle visibility of the projects based on screen size and nav2 visibility
+        function toggleVisibility() {
+            if (window.innerWidth < 1060 && nav2.classList.contains("show")) {
+                projects.classList.add("hidden");
+            } else {
+                projects.classList.remove("hidden");
+            }
+        }
+
+        // Example: Triggering the toggle (you should have your own logic to add/remove the "show" class)
+        setInterval(() => {
+            toggleVisibility(); // Check visibility every second
+        }, 0);
+    </script>
+    <script src="navComponentfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body{
+    background-color:  #000018;
+    /* border: 0.3rem solid white; */
+    color: white;
+}
+h4{
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.container{
+    position: sticky;
+    top: 0px;
+}
+
+main{
+    margin: 0px 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.text{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+#developer{
+    color: rgb(90, 90, 226);
+}
+.image{
+   background-image: url('assest\\myimage.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width:calc(100vw - 70vw);
+   height: calc(100vw - 70vw);
+   border-radius: 50%;
+}
+#content{
+    font-size: 14px;
+    word-spacing: 3px;
+    letter-spacing: 0px;
+    margin-top: 4px;
+}
+#small-name{
+    background-color: rgba(89,90,199,0.4);
+    padding: 4px;
+    display: inline;
+    font-size: 12px;
+
+}
+.touch-btn{
+    background-color:#2F79F5;
+    padding: 10px 1.6rem;
+    border-radius: 1.3rem;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+.touch-btn:hover{
+    border: 1px solid white;
+    transform: scale(1.1);
+    margin: 0px 5px;
+}
+.touch{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contact-icon{
+    margin-left: 2rem;
+}
+.icons-of-contact{
+    font-size: 3rem;
+}
+
+#skill p{
+    margin-left: 1rem;
+    margin-top:  1rem;
+}
+.skills-list{
+    margin: 7px 2rem;
+    
+
+}
+
+ul li{
+    padding: 2px 0px;
+}
+.hobbies-list{
+    margin: 7px 4rem;
+}
+#skill h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 0.4rem;
+font-size: 1.8rem;
+}
+
+.margin-class{
+  margin-left: 31vh;
+}
+
+.contacting{
+    margin: 8px;
+    font-size: 2rem;
+}
+.icon-container , .icon-container a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* for setting the image in small screens upto 1060 width of screen */
+@media  screen and (max-width:1060px) {
+ main{
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+    transition: all ;
+ }  
+ .image{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+ }
+
+}
+#footer{
+    text-align: center;
+    margin: 2rem 0px;
+}
+@media screen and (max-width:530px) {
+    .icons-of-contact{
+        font-size: 1.4rem;
+    }
+    .touch-btn{
+        font-size: 10px;
+    }
+
+     .image{
+    width:calc(100vw - 60vw);
+   height: calc(100vw - 60vw);
+  
+ }
+
+}
+@media  (min-width:480px) and (max-width:1060px) {
+   .text{
+    margin-left: 2rem;
+   }
+   .contact-icon{
+    margin-left: 2rem;
+}
+.icons-of-contact{
+    font-size: 2rem;
+}
+ .image{
+    width:calc(100vw - 60vw);
+   height: calc(100vw - 60vw);
+  
+ }
+ }
+/* Runs when screen width is full ;*/
+@media screen and (min-width:1060px) {
+   
+   .text{
+    width: 50%;
+   }
+   .nav2{
+   display: none !important;
+   }
+   #skill h2{
+justify-content: flex-start;
+   }
+
+}
