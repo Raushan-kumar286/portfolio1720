@@ -29,7 +29,7 @@ main{
     color: rgb(90, 90, 226);
 }
 .image{
-   background-image: url('assest\\myimage.jpg');
+   background-image: url('myimage.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    width:calc(100vw - 70vw);
