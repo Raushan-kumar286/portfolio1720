@@ -20,7 +20,7 @@ right: 20%;
     border: 2px solid yellow;
     height: 300px;
     width:400px;
-    background-image: url(welcome.jpeg);
+    background-image: url('welcome.jpeg');
    background-repeat: no-repeat;
    background-size: cover;
     margin: auto;
